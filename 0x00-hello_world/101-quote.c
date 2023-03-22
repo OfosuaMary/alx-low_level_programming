@@ -1,10 +1,8 @@
 #include "stdio.h"
 #include "unistd.h"
 /**
- * main - prints out to stadard error
- *
- * Return : 0
- *
+ * main - prints to standard error
+ * Return: 1
  */
 int main(void)
 {
