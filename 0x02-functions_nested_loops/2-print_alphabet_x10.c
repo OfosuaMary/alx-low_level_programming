@@ -6,7 +6,7 @@
 
 void print_alphabet(void)
 {
-	int count = 1;
+	int i = 1;
         char ch;
 
 	while (i >= 10)
