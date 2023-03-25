@@ -7,16 +7,21 @@
 int main(void)
 {
 	int alph = '0';
-	long int alph1;
+	int alph1;
+	int alph2;
 
-	while (alph <= '8')
+	while (alph <= '7')
 	{
 		alph1 = alph + 1;
-		while (alph1 <= '9')
+		while (alph1 <= '8')
 		{
+			alph2 = alph1 + 1;
+			while (alph2 <= '9')
+			{
 			putchar(alph);
 			putchar(alph1);
-			if ((alph == '8') && (alph1 == '9'))
+			putchar(alph2);
+			if ((alph == '7') && (alph1 == '8') && (alph2 == '9'))
 			{
 				break;
 			}
@@ -27,6 +32,8 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+			alph2++;
+		}
 			alph1++;
 		}
 		alph++;
