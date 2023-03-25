@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - prints singledigits of base 10
+ * main - prints double  digits
  * Return: 0
  */
 int main(void)
@@ -16,7 +16,11 @@ int main(void)
 		{
 			putchar(alph);
 			putchar(alph1);
-			if ((alph <= '8') && (alph1 < '9'))
+			if ((alph == '8') && (alph1 == '9'))
+			{
+				break;
+			}
+			else
 			{
 				putchar(',');
 				putchar(' ');
