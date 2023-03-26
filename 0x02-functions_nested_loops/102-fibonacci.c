@@ -1,4 +1,4 @@
-#include <stdio.>
+#include <stdio.h>
 /**
  * main - print 1st 50 fibonnaci start with 1 and 2
  * Return: returns 0
