@@ -21,15 +21,11 @@ void print_times_table(int n)
 			c = a * b;
 			if ((c < 10) && (b != 0))
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(c + '0');
+				printf("'   %d", c);
 			}
 			else if (b == 0)
 			{
-				_putchar(c + '0');
+				printf("%d", c);
 			}
 			else if ((c >= 10) && (c < 100))
 			{
