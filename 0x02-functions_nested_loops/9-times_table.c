@@ -12,9 +12,8 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			c = a * b;
-			if (c < 10)
+			if ((c < 10) && (b != 0))
 			{
-				_putchar(c + '0');
 				if (b == 9)
 				{
 				}
@@ -24,14 +23,16 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(' ');
 				}
+				_putchar(c + '0');
+			}
+			else if (b == 0)
+			{
+				_putchar(c + '0');
 			}
 			else
 			{
-				int g = c % 10;
-				int h = c / 10;
-
-				_putchar(h + '0');
-				_putchar(g + '0');
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
 				if (b != 9)
 				{
 				_putchar(',');
