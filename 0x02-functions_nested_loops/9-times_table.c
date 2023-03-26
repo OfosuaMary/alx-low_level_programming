@@ -15,18 +15,31 @@ void times_table(void)
 			if (c < 10)
 			{
 				_putchar(c + '0');
+				if (b == 9)
+				{
+				}
+				else
+				{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				}
 			}
 			else
 			{
 				int g = c % 10;
 				int h = c / 10;
-				_putchar(h);
-				_putchar(g);
+
+				_putchar(h + '0');
+				_putchar(g + '0');
+				if (b != 9)
+				{
 				_putchar(',');
 				_putchar(' ');
+				}
+				else
+				{
+				}
 			}
 		}
 		_putchar('\n');
