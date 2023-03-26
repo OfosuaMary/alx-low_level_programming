@@ -33,10 +33,7 @@ void print_times_table(int n)
 			}
 			else if ((c >= 10) && (c < 100))
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				printf("%d", c);
+				printf(",  %d", c);
 			}
 			else
 			{
