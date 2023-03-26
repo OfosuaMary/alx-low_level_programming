@@ -21,7 +21,10 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(c);
+				int g = c % 10;
+				int h = c / 10;
+				_putchar(h);
+				_putchar(g);
 				_putchar(',');
 				_putchar(' ');
 			}
