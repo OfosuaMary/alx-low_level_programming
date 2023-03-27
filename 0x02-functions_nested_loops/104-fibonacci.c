@@ -5,25 +5,19 @@
  */
 int main(void)
 {
-	unsigned long sum, a, b, c;
+	int count;
+	unsigned long a, b, c;
 
 	a = 1;
 	b = 2;
-	c = 0;
-	sum = 0;
-	while (1)
+	printf("%lu, %lu", a, b);
+	for (count = 1; count <= 96; count++)
 	{
-		if (c <= 4000000)
-		{
 		c = a + b;
-		if ((c % 2) == 0)
-		{
-			sum += c;
-		}
+		printf(", %lu", c);
 		a = b;
 		b = c;
-		}
 	}
-	printf("%lu\n", sum);
+	printf("\n");
 	return (0);
 }
