@@ -5,15 +5,16 @@
  */
 int main(void)
 {
-	int count, a, b, c;
+	int count;
+	unsigned long a, b, c;
 
 	a = 1;
 	b = 2;
-	printf("%d, %d", a, b);
+	printf("%lu, %lu", a, b);
 	for (count = 1; count <= 50; count++)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
