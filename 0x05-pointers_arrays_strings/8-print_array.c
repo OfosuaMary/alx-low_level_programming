@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio>
 /**
  * print_array - print n elements of an array
  * @a: string parameter
