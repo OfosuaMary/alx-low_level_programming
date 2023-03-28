@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * print_rev - prints string reverse
+ * rev_string - prints string reverse
  * @s: String parameter
  * Return: void
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int len = 0;
+	int len, i = 0;
+	char rev[];
 
 	while (s[len] != '\0')
 	{
@@ -14,8 +15,9 @@ void print_rev(char *s)
 	}
 	while (len >= 0)
 	{
-		_putchar(str[len]);
+		rev[i] == s[len];
 		len--;
+		i++;
 	}
-	_putchar('\n');
+	s = rev;
 }
