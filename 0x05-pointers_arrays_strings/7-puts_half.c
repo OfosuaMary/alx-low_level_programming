@@ -10,18 +10,17 @@ void puts_half(char *s)
 
 	while (s[len] != '\0')
 	{
-	len++;
+		len++;
 	}
-	if((len % 2) == 1)
-	{
-		 len = (len - 1) / 2;
-	}
-	else
-	{
-	len = len / 2;
-	len -= 1;
-	}
-	while (i <= len)
+		if ((len % 2) == 1)
+		{
+		 	i = (len - 1) / 2;
+		}
+		else
+		{
+			i = len / 2;
+		}
+	while (s[i] != '\0')
 	{
 		_putchar(s[i]);
 		i++;
