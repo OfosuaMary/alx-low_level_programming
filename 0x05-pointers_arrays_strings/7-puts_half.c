@@ -1,28 +1,29 @@
 #include "main.h"
 /**
- * puts_half - prints string reverse
- * @s: String parameter
+ * puts_half - prints half of a string
+ * @str: string as parameter
  * Return: void
  */
-void puts_half(char *s)
+void puts_half(char *str)
 {
-	int len, i = 0;
+	int len, i  = 0;
 
-	while (s[len] != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
-		if ((len % 2) == 1)
-		{
-		 	i = (len - 1) / 2;
-		}
-		else
-		{
-			i = len / 2;
-		}
-	while (s[i] != '\0')
+	if ((len % 2) == 1)
 	{
-		_putchar(s[i]);
+		i = (len - 1) / 2;
+	}
+	else
+	{
+		i = len / 2;
+	}
+
+	while (str[i - 1] != '\0')
+	{
+		_putchar(str[i - 1]);
 		i++;
 	}
 	_putchar('\n');
