@@ -11,17 +11,22 @@ void puts_half(char *str)
 	while (str[len] != '\0')
 	{
 		len++;
+		_putchar(len);
 	}
 	if ((len % 2) == 1)
 	{
 		i = (len - 1) / 2;
+		_putchar(i);
 	}
 	else
 	{
 		i = len / 2;
+		_putchar(i);
+		_putchar(i);
 	}
 	while (str[i] != '\0')
 	{
+		_putchar('k');
 		if ((i % 2) == 0)
 		{
 		_putchar(str[i]);
