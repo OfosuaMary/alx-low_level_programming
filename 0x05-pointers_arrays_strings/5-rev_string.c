@@ -21,5 +21,10 @@ void rev_string(char *s)
 		len--;
 		i++;
 	}
-	s = rev;
+	len = 0;
+	 while (rev[len] != '\0')
+        {
+		*(s + len) = *(rev + len);
+		len++;
+        }
 }
