@@ -1,27 +1,25 @@
-include "main.h"
+#include "main.h"
+#include <stddef.h>
 /**
- * _strcat - concantenates ywo strings
+ * _strcat - concantenates two strings
  * @dest: character pointer
- * @src: charater pointer
+ * @src: character pointer
  * Return: string pointer
  */
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
-	char *appnd;
 
-	while (*(dest + i) != '\0')
+	while (dest[i] != '\0')
 	{
-		*(appnd + i) = *(dest + i);
 		i++;
 	}
-	while (*(src + j) != '\0')
+	while (src[j] != '\0')
 	{
-		*(appnd + i) = *(src + j);
-		i++;
+		dest[i + j] = src[j];
 		j++;
 	}
-	*(appnd + i) = '\0';
-	return (appnd);
+	dest[i + j] = '\0';
+	return (dest);
 }
