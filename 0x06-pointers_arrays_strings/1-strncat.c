@@ -4,7 +4,7 @@
  * _strncat - concantenates two strings
  * @dest: character pointer
  * @src: character pointer
- * @n - count
+ * @n: count
  * Return: string pointer
  */
 char *_strncat(char *dest, char *src, int n)
@@ -22,9 +22,9 @@ char *_strncat(char *dest, char *src, int n)
 		if (j < n)
 		{
 			dest[i + j] = src[j];
-		         j++;
+			j++;
 		}
-		else 
+		else
 		{
 			break;
 		}

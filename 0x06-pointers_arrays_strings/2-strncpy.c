@@ -4,24 +4,16 @@
  * _strncpy - concantenates two strings
  * @dest: character pointer
  * @src: character pointer
- * @n - count
+ * @n: count
  * Return: string pointer
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int j = 0;
+	int i = 0;
 
-	while (src[j] != '\0')
-	{
-		if (j < n)
-		{
-			dest[j] = src[j];
-		         j++;
-		}
-		else 
-		{
-			break;
-		}
-	}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for ( ; i < n; i++)
+		dest[i] = '\0';
 	return (dest);
 }
