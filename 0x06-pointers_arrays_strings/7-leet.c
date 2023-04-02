@@ -6,29 +6,18 @@
  */
 char *leet(char *n)
 {
-	int i = 0;
+	int j, i = 0;
+	char normalSet[10] = "aAEeoOtTlL";
+	char leetSet[10] = "4433007711";
 
 	while (n[i] != '\0')
 	{
-		if ((n[i] == 'a') || (n[i] == 'A'))
+		for (j = 0; j < 10; j++)
 		{
-			n[i] = '4';
-		}
-		else if ((n[i] == 'E') || (n[i] == 'e'))
-		{
-			n[i] = '3';
-		}
-		else if ((n[i] == 'O') || (n[i] == 'o'))
-		{
-			n[i] = '0';
-		}
-		else if ((n[i] == 't') || (n[i] == 'T'))
-		{
-			n[i] = '7';
-		}
-		else if ((n[i] == 'L') || (n[i] == 'l'))
-		{
-			n[i] = '1';
+			if (n[i] == normalSet[j])
+			{
+				n[i] = leetSet[j];
+			}
 		}
 		i++;
 	}
